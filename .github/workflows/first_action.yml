@@ -9,6 +9,8 @@ jobs: # we can create jobs under it
     runs-on: ubuntu-latest # runners where the workflow can be executed
     steps:
       - name: Print greeting
-        run: echo "Hello workd"
+        run: |
+          echo "Hello workd"
+          echo "run multiple steps"
       - name: print goodbyw
         run: echo "done - bye!"
