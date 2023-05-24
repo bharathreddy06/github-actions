@@ -1,0 +1,14 @@
+name: First Workflow # creating a workflow
+# we can have as many workflows as possible in workflows folder with different
+# yml files
+on: workflow_dispatch #when this workflow should be executed
+# here we cam define one or multiple events to trigger workflow
+# above event is used to manually trigger the workflow
+jobs: # we can create jobs under it
+  first_job:
+    runs-on: ubuntu-latest # runners where the workflow can be executed
+    steps:
+      - name: Print greeting
+        run: echo "Hello workd"
+      - name: print goodbyw
+        run: ech0 "done - bye!"
