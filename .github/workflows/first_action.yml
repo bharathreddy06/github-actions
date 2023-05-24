@@ -11,4 +11,4 @@ jobs: # we can create jobs under it
       - name: Print greeting
         run: echo "Hello workd"
       - name: print goodbyw
-        run: ech0 "done - bye!"
+        run: echo "done - bye!"
